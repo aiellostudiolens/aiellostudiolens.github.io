@@ -125,5 +125,36 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+/* ESPERIENZA */
+.experience {
+  max-width: 900px;
+}
+
+.timeline {
+  border-top: 1px solid var(--border);
+}
+
+.timeline-row {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  padding: 30px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.year {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.timeline .content strong {
+  font-weight: 400;
+}
+
+.timeline .content p {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
 
 
