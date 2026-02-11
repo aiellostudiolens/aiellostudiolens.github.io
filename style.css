@@ -82,3 +82,33 @@ footer {
   color: var(--muted);
   border-top: 1px solid var(--border);
 }
+/* LIGHTBOX */
+#lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(10,10,10,0.95);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 85%;
+}
+
+#close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+#close:hover {
+  opacity: 1;
+}
+
