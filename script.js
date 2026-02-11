@@ -34,3 +34,4 @@ if (fades.length > 0) {
 
   fades.forEach(el => observer.observe(el));
 }
+
