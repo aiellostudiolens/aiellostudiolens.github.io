@@ -1,3 +1,4 @@
+// LIGHTBOX
 const images = document.querySelectorAll(".gallery-grid img");
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
@@ -13,3 +14,17 @@ images.forEach(img => {
 closeBtn.addEventListener("click", () => {
   lightbox.style.display = "none";
 });
+
+// ANIMAZIONI SCROLL
+const fades = document.querySelectorAll(".fade");
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+    }
+  });
+}, { threshold: 0.2 });
+
+fades.forEach(el => observer.observe(el));
+
